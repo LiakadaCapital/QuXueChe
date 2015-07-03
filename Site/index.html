@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>趣学车，学车原来可以这么享受</title>
+
+    <meta name="description" content="趣学车官方网站">
+    <meta name="author" content="趣学车">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid full-width">
+	<div class="row">
+		<div class="col-md-12">
+			<nav> 
+				<div class="navbar-logo">
+				</div>
+				<div class="navbar-links-container">
+				</div>
+			</nav>
+			<div class="banner">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="banner-text-container">
+							<h1>当驾校教练<br>如伴侣一样贴心</h1>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="./img/device.png" class="banner-device-image" id="banner-device">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="homepage-features-image">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/">
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+		//run on document load and on window resize
+		$(window).load(function () {
+
+			function hideDiv() {
+				if (window.innerWidth < 1000) {
+			        $(".banner-text-container").hide();
+			    }
+			    else {
+
+			        $(".banner-text-container").fadeIn("slow");
+			    }
+			};
+
+
+		    //on load
+		    hideDiv();
+		    $(".banner-text-container").hide().delay(1200).fadeIn();
+			$(".banner-device-image").hide().delay(1600).fadeIn("slow");
+		    
+		    //on resize
+		    $(window).resize(function(){
+		       hideDiv(); 
+		    });
+		}); 
+	</script>
+
+  </body>
+</html>

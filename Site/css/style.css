@@ -1,0 +1,82 @@
+@font-face {
+    font-family: YaHei;
+    src: url(../fonts/yahei.ttf);
+}
+
+h1 {
+	font-family: YaHei;
+	color: white;
+	font-weight: lighter;
+	text-align: left;
+	font-size: 36px;
+	line-height: 48px;
+}
+
+
+body {
+
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 0px;
+	/*min-width: 1200px;*/
+
+}
+
+nav {
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	border-bottom: 2px solid #4595DB;
+	border-radius: 0px;
+	padding: 0px;
+	background-color: #f9f9f9;
+}
+
+.navbar-logo {
+	height: 50px;
+	width: 274px;
+	background-image: url('../img/navbar-logo.png');
+	background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 134px 24px;
+    overflow: hidden;
+    position: absolute;
+    left: 60px;
+
+}
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+.banner-text-container {
+    position: absolute;
+  	top: 200px;
+  	right: 120px;
+}
+
+.banner {
+	width: 100%;
+	height: auto;
+	min-height: 460px;
+	background-image: url('../img/banner.png');
+	background-repeat: no-repeat;
+    background-position: center; 
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.banner-device-image {
+	height: 460px;
+	width: auto;
+	position: absolute;
+    right: 120px;
+}
+
+.homepage-features-image {
+
+
+
+}
