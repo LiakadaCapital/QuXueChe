@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>趣学车，学车原来可以这么享受</title>
+
+    <meta name="description" content="趣学车官方网站">
+    <meta name="author" content="趣学车">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid full-width">
+	<div class="row">
+		<div class="col-md-12">
+			<nav> 
+				<div class="navbar-logo">
+				</div>
+				<div class="navbar-links-container">
+				<a href="" class="navbar-links">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="" class="navbar-links">服务介绍</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="" class="navbar-links">注册/登录</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="row homepage-features-container" style="margin-top:64px;">
+		<div class="col-md-4 homepage-features-column">
+			<div class="homepage-features-image homepage-features-image-1"><p class="homepage-features-text">实名评论<br>优质教练你来选</p></div>
+		</div>
+		<div class="col-md-4 homepage-features-column">
+			<div class="homepage-features-image homepage-features-image-2"><p class="homepage-features-text">不断进步<br>全天候跟踪进度</p></div>
+		</div>
+		<div class="col-md-4 homepage-features-column">
+			<div class="homepage-features-image homepage-features-image-3"><p class="homepage-features-text">杜绝垄断<br>让学费清晰透明</p></div>
+		</div>
+	</div>
+	<div class="row homepage-features-container" style="margin-top:20px;">
+		<div class="col-sm-2 links">
+                <div class="tags">
+                    <h6 class="tags">小树科技</h6>
+                    <ul>
+                        <li><a href="./about.html" class="tags-link">关于我们</a></li>
+                        <li><a href="./contact.html" class="tags-link">联系我们</a></li>
+                        <li><a href="./press.html" class="tags-link">媒体合作</a></li>
+                        <li><a href="./privacy.html" class="tags-link">隐私保护</a></li>
+                    </ul>
+                </div>
+            </div>
+		<div class="col-md-10" style="padding-left:80px; padding-right:80px; font-size:12px;">
+						<p><b style="font-size:20px;">关于小树科技</b><br><br>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="footer-logo"></div>
+			<div class="footer-links-left"><a href="./about.html" class="navbar-links">关于我们</a> | <a href="./contact.html" class="navbar-links">联系我们</a> | <a href="./press.html" class="navbar-links">媒体合作</a> | <a href="./privacy.html" class="navbar-links">隐私保护</a></div>
+		</div>
+		<div class="col-md-6">
+			<p class="footer-license">©2015 北京小树科技有限公司 京公网安备11010802010000号 京ICP备12043000号-1　京ICP证150000号</p>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+		//run on document load and on window resize
+		$(window).load(function () {
+
+			function hideDiv() {
+				if (window.innerWidth < 1000) {
+			        $(".banner-text-container").hide();
+			    }
+			    else {
+
+			        $(".banner-text-container").fadeIn("slow");
+			    }
+			};
+
+		    //on load
+		    hideDiv();
+		    $(".banner-text-container").hide().delay(800).fadeIn();
+			$(".banner-device-image").hide().delay(800).fadeIn("slow");
+		    $(".homepage-features-text").hide().delay(800).fadeIn("slow");
+		    //on resize
+		    $(window).resize(function(){
+		       hideDiv(); 
+		    });
+		}); 
+	</script>
+
+  </body>
+</html>
