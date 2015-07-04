@@ -28,41 +28,40 @@
 			</nav>
 		</div>
 	</div>
-	<div class="row homepage-features-container" style="margin-top:64px;">
-		<div class="col-md-4 homepage-features-column">
-			<div class="homepage-features-image homepage-features-image-1"><p class="homepage-features-text">实名评论<br>优质教练你来选</p></div>
-		</div>
-		<div class="col-md-4 homepage-features-column">
-			<div class="homepage-features-image homepage-features-image-2"><p class="homepage-features-text">不断进步<br>全天候跟踪进度</p></div>
-		</div>
-		<div class="col-md-4 homepage-features-column">
-			<div class="homepage-features-image homepage-features-image-3"><p class="homepage-features-text">杜绝垄断<br>让学费清晰透明</p></div>
-		</div>
-	</div>
-	<div class="row homepage-features-container" style="margin-top:20px;">
-		<div class="col-sm-2 links">
-                <div class="tags">
-                    <h6 class="tags">小树科技</h6>
-                    <ul>
-                        <li><a href="./about.html" class="tags-link">关于我们</a></li>
-                        <li><a href="./contact.html" class="tags-link">联系我们</a></li>
-                        <li><a href="./press.html" class="tags-link">媒体合作</a></li>
-                        <li><a href="./privacy.html" class="tags-link">隐私保护</a></li>
-                    </ul>
-                </div>
-            </div>
-        <div class="col-md-2" style="padding-left:80px; padding-right:80px; font-size:32px; text-align:right; color:#F18D00;">
-			<p>2015年<br><br>
 
-			</p>
+	<div class="row homepage-features-container" id="feature-a" style="margin-top:120px;">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style=" font-family:YaHei; font-size:64px; font-weight:lighter; text-align:center; color:rgb(140,140,140);">
+			<p>21世纪该有的学车体验<br><br>
 		</div>
-		<div class="col-md-8" style="font-size:12px; text-align:left;">
-			<p><b style="font-size:20px;">2015年6月</b><br>
-				<h3>完成种子轮融资：XXX创投100万美金</h3><br><br>
-			</p>
-		</div>
+		<div class="col-md-1"></div>
 	</div>
-	<div class="row">
+	<div class="row homepage-features-container" id="feature-b" style="margin-top:20px;">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="padding-left:80px; padding-right:80px; font-size:24px; font-weight:lighter; text-align:center; color:rgb(140,140,140);">
+			<p>实名举报和评价系统，公平的量化服务水准<br><br>
+			<img src="./img/features-appointment.png" style="width:300px;">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row homepage-features-container" id="feature-c" style="margin-top:120px;">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="padding-left:80px; padding-right:80px; font-size:24px; font-weight:lighter; text-align:center; color:rgb(140,140,140);">
+			<p>教练提供回馈，为每次学车进度打分，不断进步<br><br>
+			<img src="./img/features-dashboard.png" style="width:300px;">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<div class="row homepage-features-container" id="feature-d" style="margin-top:120px; margin-bottom:80px;">
+		<div class="col-md-1"></div>
+		<div class="col-md-10" style="padding-left:80px; padding-right:80px; font-size:24px; font-weight:lighter; text-align:center; color:rgb(140,140,140);">
+			<p>学费清晰透明，多样化的付款方案<br><br>
+			<img src="./img/features-payment.png" style="width:300px;">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<div class="row" id="footer">
 		<div class="col-md-6">
 			<div class="footer-logo"></div>
 			<div class="footer-links-left"><a href="./about.html" class="navbar-links">关于我们</a> | <a href="./contact.html" class="navbar-links">联系我们</a> | <a href="./press.html" class="navbar-links">媒体合作</a> | <a href="./privacy.html" class="navbar-links">隐私保护</a></div>
@@ -95,7 +94,11 @@
 		    hideDiv();
 		    $(".banner-text-container").hide().delay(800).fadeIn();
 			$(".banner-device-image").hide().delay(800).fadeIn("slow");
-		    $(".homepage-features-text").hide().delay(800).fadeIn("slow");
+		    $("#feature-a").hide().delay(800).fadeIn("slow");
+		    $("#feature-b").hide().delay(1200).fadeIn("slow");
+		    $("#feature-c").hide().delay(1400).fadeIn("slow");
+		    $("#feature-d").hide().delay(1600).fadeIn("slow");
+		    $("#footer").hide().delay(1800).fadeIn("slow");
 		    //on resize
 		    $(window).resize(function(){
 		       hideDiv(); 

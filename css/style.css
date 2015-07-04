@@ -16,6 +16,7 @@ h1 {
 body {
 
 	width: 100%;
+	min-width: 1000px;
 	padding: 0 0 0 0;
 	margin: 0px;
 	/*min-width: 1200px;*/
@@ -116,7 +117,7 @@ nav {
 .homepage-features-image {
 	height: 250px;
 	width: 100%;
-	max-width: 500px;
+	max-width: 580px;
 	background-size: auto 250px;
 	/*opacity: 0;*/
 	-webkit-transition: opacity .15s ease-in-out;
