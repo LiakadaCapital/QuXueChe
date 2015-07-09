@@ -17,7 +17,6 @@
         <!-- end -->
         <link rel="stylesheet" href="startup/common-files/css/animations.css">
         <link rel="stylesheet" href="static/css/style.css">
-        
         <title></title>
     </head>
 
@@ -47,17 +46,21 @@
     </div>
     <div class="header-background"></div>
 </header>
+
+
 <section class="header-11-sub bg-midnight-blue">
     <div class="background">&nbsp;</div>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h3 style="display:inline-block;">当驾校教练<br>如伴侣一样贴心</h3> 
+                <h3 style="display:inline-block;z-index:1000000;">当驾校教练<br>如伴侣一样贴心</h3> 
             </div>
+            
 
         </div>
     </div>
-    <img src="static/img/device.png" class="banner-device-image" id="banner-device">
+    
+    <img src="static/img/device.png" class="banner-device-image" id="banner-device" style="z-index:1;">
 </section>
 <section>
 	<div class="container-fluid" id="features">
@@ -105,6 +108,7 @@
     </div>
 </footer>            <!-- Placed at the end of the document so the pages load faster -->
             <script src="startup/common-files/js/jquery-1.10.2.min.js"></script>
+            <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
             <script src="startup/common-files/js/jquery.bxslider.min.js"></script>
             <script src="startup/common-files/js/jquery.scrollTo-1.4.3.1-min.js"></script>
             <script src="startup/common-files/js/jquery.sharrre.min.js"></script>
@@ -122,7 +126,7 @@
             <script type="text/javascript">
 		//run on document load and on window resize
 		$(window).load(function () {
-
+			
 			function hideDiv() {
 				if (window.innerWidth < 1000) {
 			        $(".banner-text-container").hide();
@@ -142,8 +146,16 @@
 		    $(window).resize(function(){
 		       hideDiv(); 
 		    });
+		    
+		    
+		    if ( $.browser.msie ) {
+				$("#banner-device").hide();
+			}
 		}); 
 	</script>
+	
+	
         </div>
+
     </body>
 </html>
